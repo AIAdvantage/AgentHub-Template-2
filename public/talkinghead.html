@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<style>
+  html, body { margin:0; height:100%; background:transparent; overflow:hidden; }
+  #stage { width:100%; height:100%; }
+  #fallback { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; color:#666; font:14px -apple-system; }
+</style>
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js/+esm",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/"
+  }
+}
+</script>
+</head>
+<body>
+<div id="stage"></div>
+<div id="fallback">Lade 3D-Avatar…</div>
+<script type="module">
+  let head, headaudio = null, ready = false, audioReady = false;
+  const fb = document.getElementById('fallback');
+
+  try {
+    const mod = await import("https://cdn.jsdelivr.net/gh/met4citizen/TalkingHead@1.7/modules/talkinghead.mjs");
+    const { TalkingHead } = mod;
+    head = new TalkingHead(document.getElementById('stage'), {
+      ttsEndpoint: null,
+      cameraView: "upper",
+      lipsyncModules: ["en", "fi"],
+      modelPixelRatio: window.devicePixelRatio || 1,
+      cameraZoomEnable: true,
+      cameraPanEnable: true,
+      cameraRotateEnable: true,
+    });
+    // Mouse-wheel zoom: dolly the OrbitControls / camera
+    document.getElementById('stage').addEventListener('wheel', (ev) => {
+      ev.preventDefault();
+      const factor = Math.exp(ev.deltaY * 0.0015); // smooth zoom
+      try {
+        if (head.camera && head.controls) {
+          const c = head.camera, t = head.controls.target;
+          const dx = c.position.x - t.x, dy = c.position.y - t.y, dz = c.position.z - t.z;
+          const dist = Math.hypot(dx, dy, dz);
+          const minD = head.controls.minDistance || 0.2;
+          const maxD = head.controls.maxDistance || 20;
+          const newDist = Math.min(maxD, Math.max(minD, dist * factor));
+          const k = newDist / dist;
+          c.position.set(t.x + dx * k, t.y + dy * k, t.z + dz * k);
+          head.controls.update && head.controls.update();
+        }
+      } catch(_) {}
+    }, { passive: false });
+    await head.showAvatar({
+      url: "https://cdn.jsdelivr.net/gh/met4citizen/TalkingHead@1.7/avatars/brunette.glb",
+      body: 'F', avatarMood: 'neutral', lipsyncLang: 'en'
+    });
+    fb.remove();
+    ready = true;
+    parent.postMessage({ type: 'avatar-ready' }, '*');
+  } catch (e) {
+    fb.textContent = "Avatar konnte nicht geladen werden: " + (e?.message || e);
+    parent.postMessage({ type: 'avatar-error', error: String(e?.message || e) }, '*');
+  }
+
+  async function ensureHeadAudio() {
+    if (audioReady) return;
+    if (!head || !head.audioCtx) return;
+    if (head.audioCtx.state === 'suspended') await head.audioCtx.resume();
+    try {
+      await head.audioCtx.audioWorklet.addModule(
+        "https://cdn.jsdelivr.net/gh/met4citizen/HeadAudio@main/dist/headworklet.min.mjs"
+      );
+      const m = await import("https://cdn.jsdelivr.net/gh/met4citizen/HeadAudio@main/dist/headaudio.min.mjs");
+      const HeadAudio = m.HeadAudio || m.default;
+      headaudio = new HeadAudio(head.audioCtx, {
+        parameterData: { vadGateActiveDb: -40, vadGateInactiveDb: -60 }
+      });
+      // Load pre-trained viseme model
+      await headaudio.loadModel("https://cdn.jsdelivr.net/gh/met4citizen/HeadAudio@main/dist/model-en-mixed.bin");
+
+      // Tap the speech gain node into HeadAudio for amplitude/feature analysis
+      head.audioSpeechGainNode.connect(headaudio);
+
+      // Pipe viseme values to the avatar blendshapes
+      headaudio.onvalue = (key, value) => {
+        try {
+          if (head.mtAvatar && head.mtAvatar[key]) {
+            head.mtAvatar[key].newvalue = value;
+            head.mtAvatar[key].needsUpdate = true;
+          } else if (typeof head.setValue === 'function') {
+            head.setValue(key, value);
+          }
+        } catch(_) {}
+      };
+      // Hook into TalkingHead's animation loop
+      head.opt.update = headaudio.update.bind(headaudio);
+      audioReady = true;
+    } catch (e) {
+      console.warn('HeadAudio init failed:', e);
+      parent.postMessage({ type: 'avatar-error', error: 'headaudio: ' + (e?.message || e) }, '*');
+    }
+  }
+
+  async function speakBuffer(arrBuf) {
+    await ensureHeadAudio();
+    let audioBuf;
+    try {
+      audioBuf = await head.audioCtx.decodeAudioData(arrBuf.slice(0));
+    } catch (e) {
+      parent.postMessage({ type: 'avatar-error', error: 'decode: ' + e.message }, '*');
+      return;
+    }
+    const src = head.audioCtx.createBufferSource();
+    src.buffer = audioBuf;
+    // Route through TalkingHead's speech path → HeadAudio analyses + audio is heard
+    src.connect(head.audioSpeechGainNode);
+    src.start();
+    src.onended = () => parent.postMessage({ type: 'avatar-done' }, '*');
+  }
+
+  function speakBrowser(text, voice) {
+    try {
+      const u = new SpeechSynthesisUtterance(text);
+      const voices = speechSynthesis.getVoices();
+      const match = voices.find(v => v.name === voice) ||
+                    voices.find(v => voice && v.lang && voice.startsWith(v.lang.slice(0,2)));
+      if (match) u.voice = match;
+      let raf = null;
+      const start = performance.now();
+      const animate = () => {
+        if (!head) return;
+        const t = (performance.now() - start) / 1000;
+        const v = 0.3 + 0.5 * Math.abs(Math.sin(t * 9));
+        try { head.setValue && head.setValue('viseme_aa', v); } catch(_){}
+        raf = requestAnimationFrame(animate);
+      };
+      u.onstart = () => animate();
+      u.onend = () => {
+        if (raf) cancelAnimationFrame(raf);
+        try { head.setValue && head.setValue('viseme_aa', 0); } catch(_){}
+        parent.postMessage({ type: 'avatar-done' }, '*');
+      };
+      speechSynthesis.cancel();
+      speechSynthesis.speak(u);
+    } catch (e) {
+      parent.postMessage({ type: 'avatar-error', error: String(e?.message || e) }, '*');
+    }
+  }
+
+  window.addEventListener('message', async (e) => {
+    if (!ready) return;
+    const d = e.data || {};
+    if (d.type === 'speak-buffer') await speakBuffer(d.buffer);
+    else if (d.type === 'speak-tts') speakBrowser(d.text, d.voice);
+    else if (d.type === 'stop') {
+      try { speechSynthesis.cancel(); } catch(_){}
+      try { head && head.stopSpeaking && head.stopSpeaking(); } catch(_){}
+    }
+  });
+</script>
+</body>
+</html>
