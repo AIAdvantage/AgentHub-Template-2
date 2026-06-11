@@ -43,40 +43,35 @@ A private website (your **Hub**) where the files your AI writes show up as cards
 
 ---
 
-## 🟡 PART 1 — Create your Hub from the template (≈5 min, mostly waiting)
+## 🟡 PART 1 — Build your Hub from the template (≈5 min, mostly waiting)
 
-> Goal: get the template into a new Lovable project, and let Lovable build it.
+1. Go to your **Lovable** tab. You land on the **dashboard**: a colorful page that says
+   **"Let's build something, <your name>"** with a big **chat box** in the middle
+   (placeholder text: *"Ask Lovable to generate a report on…"*) and a left sidebar
+   (Home, Search, Projects…).
+2. Click into that **chat box**.
+3. **Paste the setup prompt** (your trainer gives it; it's also in the template as
+   `LOVABLE-SETUP-PROMPT.md`). The prompt already contains the **template repo URL** and
+   all the build instructions — so you do **NOT** connect GitHub here. *(That option isn't
+   available at this step; it happens later, in Part 1B.)*
+4. **What you see:** your pasted text fills the chat box.
+5. Press **Enter** (or click the round **↑** button on the right of the box).
+6. **What you see:** Lovable opens a project view and starts **thinking**, then writes out
+   a **Plan**.
+7. If a **plan / approve** prompt appears, click **Approve** (or **Start**). Then wait —
+   Lovable builds for a minute or two and turns on **Lovable Cloud**.
+8. ✅ **What you see when done:** a preview titled **"My AI Hub"** with the top menu
+   **Home · 💡 Ideas · 🏆 Wins · Tools · Library**, and the Home area saying *"Your vault is
+   empty"* — that's **correct**, not an error.
 
-1. In the **Lovable** tab, create a **new project** and choose to **import / connect a
-   GitHub repository**. (Look for "GitHub", "Import repo", or the "+" menu.)
-2. Paste the template repo URL when asked:
-   `https://github.com/fayamonkey/AgentHub-Template`
-3. If GitHub asks for permission, click **Authorize / Install** (the one-click GitHub
-   App — **no token needed here yet**).
-4. **What you see now:** the Lovable editor — a **chat panel on the left** (with an input
-   box at the bottom that says *"Ask Lovable…"*) and a **Preview on the right**.
-5. Click into the chat box on the left. **Paste the setup prompt** (your trainer gives it;
-   it's also in the template as `LOVABLE-SETUP-PROMPT.md`). It already contains the
-   instructions Lovable needs.
-6. **What you see:** your pasted text sitting in the chat box.
-7. Press **Enter** (or click the **↑ / send** button).
-8. **What you see:** Lovable "thinks" and writes out a **Plan** of what it will do.
-9. If a **plan / approve** button appears, click **Approve** (or **Start / Build**). Then
-   wait — Lovable builds for a minute or two.
-10. During the build Lovable will **turn on Lovable Cloud** and may ask you to confirm —
-    click **Yes / Enable**.
-11. Lovable will also **ask for a secret named `GITHUB_VAULT_TOKEN`**. Leave it for now —
-    we create the token in Part 2 and paste it in Part 3.
-12. ✅ **What you see when done:** the Preview shows a hub titled **"My AI Hub"** with a top
-    menu: **Home · 💡 Ideas · 🏆 Wins · Tools · Library**. The Home area says *"Your vault is
-    empty"* — that's **correct**, not an error.
-
-### Write down your repo name (important!)
-13. Lovable made **its own private repo** for your project. Find its name:
-    - In the Lovable left panel, open **Settings** (gear) → **Git**.
-    - **What you see:** "Repository connection" with a repo like `yourname/agent-hub-xxxx`
-      and a green **Connected**.
-    - **Copy that repo name** — you need it in Part 2 and Part 4. Example: `dirk-hub/agent-hub-connect`.
+## 🟡 PART 1B — Connect GitHub (this creates your own repo)
+_(Exact screens to be added from the live flow — see note at the end of this guide.)_
+1. In your Lovable project, open the **GitHub / Git** option and **connect GitHub**.
+2. Lovable creates **your own private repo** for this project (e.g.
+   `yourname/agent-hub-xxxx`).
+3. **Find and copy your repo name:** Settings → **Git** → "Repository connection" shows
+   `yourname/agent-hub-xxxx` with a green **Connected**. **Copy it** — you need it in
+   Part 2 and Part 4.
 
 ---
 
@@ -137,4 +132,13 @@ A private website (your **Hub**) where the files your AI writes show up as cards
 5. Cowork does it and tells you it pushed the file.
 6. Go to your **Hub** Preview → **reload the page** (normal refresh, F5).
 7. ✅ **What you see:** a new card under **Tools** with your text. **That's content written
-   by your AI, showing in y
+   by your AI, showing in your Hub.** 🎉
+
+> 🔁 To make it automatic later: add one line to any Cowork **scheduled task** — *"…also
+> save the result as a markdown file and commit it to my GitHub vault's content/ folder."*
+
+---
+
+## 🟡 PART 6 — Use Ideas + Wins (≈2 min)
+1. In your Hub top menu, click **💡 Ideas**.
+2

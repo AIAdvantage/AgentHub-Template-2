@@ -1,9 +1,11 @@
-# Paste this as the FIRST message when you connect this repo to a new Lovable project
+# Paste this as your FIRST message on the Lovable dashboard
 
-You are adopting an existing, working web app from this GitHub repo. It is a **plain
-Vite + React "AI Hub"** with exactly three features: a content **Hub**, an **Ideas**
-pipeline (Kanban), and a **Wins** tracker. Wire it up to run in Lovable + Lovable Cloud —
-do NOT redesign or rebuild it.
+Build my app from this existing GitHub repo:
+https://github.com/fayamonkey/AgentHub-Template
+
+Import/adopt it AS-IS — do NOT redesign or rebuild it. It is a plain Vite + React
+"AI Hub" with exactly three features: a content **Hub**, an **Ideas** pipeline (Kanban),
+and a **Wins** tracker. Wire it up to run in Lovable + Lovable Cloud.
 
 ## Hard rules
 - KEEP the existing plain Vite + React app as-is. Do NOT rebuild it on TanStack Start or
