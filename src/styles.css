@@ -412,3 +412,28 @@ footer { margin:50px auto 0; max-width:1000px; padding:0 22px; text-align:center
   .avatar-chat-view .avatar-stage { flex:0 0 38%; min-height:260px; }
 }
 
+
+/* ===== News board (board view inside a card modal) ===== */
+.panel-wide { max-width: 980px; }
+.nb-wrap { border-top:1px solid var(--line); padding-top:18px; }
+.nb-head { display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap; margin-bottom:18px; }
+.nb-sub { color:var(--mut); font-size:13.5px; display:flex; align-items:center; gap:8px; }
+.nb-count { font-size:11px; color:var(--mut); background:var(--soft); border:1px solid var(--line); border-radius:980px; padding:2px 9px; }
+.nb-filters { display:flex; gap:6px; flex-wrap:wrap; align-items:center; }
+.nb-filters button { background:var(--soft); border:1px solid var(--line); color:var(--mut); font:inherit; font-size:13px; font-weight:500; padding:6px 13px; border-radius:980px; cursor:pointer; transition:.15s; }
+.nb-filters button:hover { color:var(--txt); }
+.nb-filters button.on { background:var(--txt); color:var(--surface); border-color:var(--txt); }
+.nb-pick { display:inline-flex; align-items:center; border:1px solid var(--line); background:var(--soft); border-radius:980px; padding:0 6px; }
+.nb-pick.on { border-color:var(--txt); }
+.nb-pick input { background:transparent; border:none; outline:none; font:inherit; font-size:13px; color:var(--txt); padding:5px 6px; cursor:pointer; }
+.nb-grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(220px,1fr)); gap:16px; }
+.nb-card { position:relative; background:var(--surface); border:1px solid var(--line); border-radius:18px; padding:18px 16px; box-shadow:0 1px 2px var(--shadow); transition:.18s ease; }
+.nb-card:hover { transform:translateY(-2px); box-shadow:0 8px 24px rgba(0,0,0,.08); }
+.nb-dot { position:absolute; top:14px; right:14px; width:9px; height:9px; border-radius:50%; background:var(--r4); }
+.nb-day { font-size:12px; color:var(--mut); font-weight:600; }
+.nb-date { font-size:19px; font-weight:700; letter-spacing:-.02em; margin:1px 0 13px; }
+.nb-items { list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:11px; }
+.nb-item { display:flex; gap:8px; font-size:13px; line-height:1.45; color:var(--txt); }
+.nb-item .nb-ic { flex-shrink:0; opacity:.85; }
+.nb-item strong { font-weight:600; }
+.nb-empty { color:var(--mut); font-size:14px; text-align:center; padding:44px 12px; border:1px dashed var(--line); border-radius:14px; }

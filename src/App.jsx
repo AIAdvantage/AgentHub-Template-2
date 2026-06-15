@@ -3,6 +3,7 @@ import { CONFIG } from "./config.js";
 import { loadVault, loadDna, mdToHtml } from "./lib/vault.js";
 import Ideas from "./views/Ideas.jsx";
 import Wins from "./views/Wins.jsx";
+import NewsBoard from "./views/NewsBoard.jsx";
 
 const RUNGS = [
   { id: "R1", label: "Prompt" },
@@ -183,7 +184,7 @@ export default function App() {
 
       {open && (
         <div className="modal" onClick={(e) => e.target.className === "modal" && setOpen(null)}>
-          <div className="panel">
+          <div className={`panel${open.fm.view === "board" ? " panel-wide" : ""}`}>
             <button className="x" onClick={() => setOpen(null)}>×</button>
             <div className="phead">
               <div className="icon big">{open.fm.emoji || "📄"}</div>
@@ -196,7 +197,9 @@ export default function App() {
                 </div>
               </div>
             </div>
-            <div className="pbody" dangerouslySetInnerHTML={{ __html: mdToHtml(open.body) }} />
+            {open.fm.view === "board"
+              ? <NewsBoard body={open.body} updated={open.fm.updated} />
+              : <div className="pbody" dangerouslySetInnerHTML={{ __html: mdToHtml(open.body) }} />}
           </div>
         </div>
       )}

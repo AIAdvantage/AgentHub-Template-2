@@ -3,6 +3,7 @@ title: Daily AI News Scan
 emoji: 📰
 rung: R3
 category: tools
+view: board
 updated: 2026-06-15
 ---
 # Daily AI News Scan
