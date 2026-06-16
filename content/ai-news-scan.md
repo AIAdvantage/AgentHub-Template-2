@@ -4,12 +4,20 @@ emoji: 📰
 rung: R3
 category: tools
 view: board
-updated: 2026-06-15
+updated: 2026-06-16
 ---
 # Daily AI News Scan
 
 A running log of the top AI stories, one section per day. Newest at the top.
 Updated automatically every morning by a scheduled Cowork task.
+
+## 2026-06-16
+
+- **OpenAI's "Dreaming V3" memory rolls out wider.** A new ChatGPT memory architecture about 5x more compute-efficient than the old one is reaching Plus and Pro users and could bring persistent memory to the free tier.
+- **Anthropic skips building its own data centers.** Instead of OpenAI's massive owned-infrastructure push, Anthropic is leaning on partners, including a reported $1.25B/month compute deal with xAI disclosed in SpaceX's S-1.
+- **The AI IPO wave takes shape.** Anthropic filed a confidential draft S-1 on June 1 and is targeting an October listing, with OpenAI expected to follow in Q4, lining up the two largest AI listings of 2026.
+- **Apple makes Claude an iPhone option.** A new Extensions system from WWDC lets users pick third-party models like Claude inside a Gemini-powered Siri for the first time.
+- **Goldman pegs AI capex at $7.6 trillion through 2031.** The bank's estimate of cumulative spend on compute, data centers, and power shows just how large the infrastructure bet has grown.
 
 ## 2026-06-15
 
