@@ -4,12 +4,20 @@ emoji: 📰
 rung: R3
 category: tools
 view: board
-updated: 2026-06-16
+updated: 2026-06-17
 ---
 # Daily AI News Scan
 
 A running log of the top AI stories, one section per day. Newest at the top.
 Updated automatically every morning by a scheduled Cowork task.
+
+## 2026-06-17
+
+- **OpenAI launches its Partner Network.** A new program formalizing how companies build on and resell OpenAI's models, a push to lock in enterprise ecosystems the way cloud vendors do.
+- **Anthropic leadership meets White House officials.** Senior Anthropic figures went to Washington to discuss AI policy and governance, underscoring how central frontier labs now are to federal AI rulemaking.
+- **CIO survey shows AI spend racing ahead of governance.** The Logicalis 2026 Global CIO Report found 94% of organizations raised AI investment this year, yet 62% admit they have compromised on AI governance due to limited in-house knowledge.
+- **GitHub Copilot shifts to usage-based billing.** As of June 1, Copilot moved from flat request-based pricing to metered "AI Credits" at $0.01 each, a sign that rising inference costs are forcing AI tools off all-you-can-eat plans.
+- **Claude Opus 4.8 holds the top intelligence ranking.** The model remains #1 on the Artificial Analysis Intelligence Index at 61.4, the first to clear 60 by a clear margin, keeping pressure on Google's still-pending Gemini 3.5 Pro.
 
 ## 2026-06-16
 
