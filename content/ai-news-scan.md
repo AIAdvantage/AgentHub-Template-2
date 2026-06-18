@@ -4,12 +4,20 @@ emoji: 📰
 rung: R3
 category: tools
 view: board
-updated: 2026-06-17
+updated: 2026-06-18
 ---
 # Daily AI News Scan
 
 A running log of the top AI stories, one section per day. Newest at the top.
 Updated automatically every morning by a scheduled Cowork task.
+
+## 2026-06-18
+
+- **Printed artificial neurons talk to real brain cells.** Northwestern engineers built flexible, low-cost neurons that exchange lifelike electrical signals with living cells, a real step forward for brain-computer interfaces.
+- **NVIDIA unveils Cosmos 3, an open "omnimodel" for physical AI.** It folds vision reasoning, world simulation, and action generation into one architecture, aimed at robots and systems that act in the physical world.
+- **HHS will use ChatGPT to scan all 50 states' audit reports.** The agency is putting AI on annual state audits to flag fraud, waste, and abuse in federal health spending, one of the larger government AI deployments to date.
+- **Five Eyes agencies publish agentic AI safety guidance.** The US, UK, Canada, Australia, and New Zealand jointly named five risk categories for autonomous AI agents and laid out best practices for adopting them carefully.
+- **OpenAI tests model behavior before release with "Deployment Simulation."** New research simulates how a model will act in the wild ahead of launch, part of a wider industry push to catch problems before they ship.
 
 ## 2026-06-17
 
