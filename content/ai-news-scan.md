@@ -4,12 +4,20 @@ emoji: 📰
 rung: R3
 category: tools
 view: board
-updated: 2026-06-18
+updated: 2026-06-19
 ---
 # Daily AI News Scan
 
 A running log of the top AI stories, one section per day. Newest at the top.
 Updated automatically every morning by a scheduled Cowork task.
+
+## 2026-06-19
+
+- **Apple makes Claude an iPhone option for the first time.** At WWDC, Apple unveiled a Gemini-powered Siri plus a multi-AI Extensions system in iOS 27 that lets users pick Claude as an assistant, in Tim Cook's final keynote as CEO.
+- **Anthropic confidentially files for IPO at a $965B valuation.** The Claude maker closed a financing round that pushes it past OpenAI, fueled largely by the runaway success of Claude Code.
+- **Gemini 3.5 Pro release looks imminent.** Google's next flagship is still in limited Vertex AI enterprise preview, with prediction markets concentrating odds on a June 23 or June 30 public launch.
+- **Meta cuts ~8,000 jobs in an AI-focused restructuring.** About 10% of staff were laid off while another 7,000 employees were reassigned to AI teams, a sharp bet on doing more with leaner headcount.
+- **OpenAI's GPT-5.5 Instant beats doctors on health answers.** OpenAI upgraded ChatGPT's healthcare capabilities, with the new model outperforming physician-written responses in comparative tests.
 
 ## 2026-06-18
 
