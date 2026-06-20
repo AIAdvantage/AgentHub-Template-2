@@ -4,12 +4,20 @@ emoji: 📰
 rung: R3
 category: tools
 view: board
-updated: 2026-06-19
+updated: 2026-06-20
 ---
 # Daily AI News Scan
 
 A running log of the top AI stories, one section per day. Newest at the top.
 Updated automatically every morning by a scheduled Cowork task.
+
+## 2026-06-20
+
+- **OpenAI extends Codex to every role, not just developers.** Codex now reaches product managers, lawyers, analysts, and ops teams, its biggest expansion since the enterprise launch and a push to make agentic work a company-wide tool.
+- **10% of people worldwide now use AI chatbots for news weekly.** The Reuters Institute Digital News Report 2026 shows weekly use up from 7% a year ago, a steady shift in how audiences find and consume information.
+- **Amazon's custom AI silicon passes a $20B annual run rate.** Its in-house chip business is growing over 100% year over year, with multi-year commitments from OpenAI, Anthropic, Meta, and Uber signaling demand for alternatives to NVIDIA.
+- **Microsoft pledges over $1B for AI infrastructure in Thailand.** The 2026-2028 investment adds data centers built with local partners, part of the wider race to put compute capacity closer to fast-growing Asian markets.
+- **BMW i Ventures launches a $300M agentic and physical AI fund.** The fund targets early-stage to Series B startups in agentic AI, robotics, industrial software, and supply chain across North America and Europe.
 
 ## 2026-06-19
 
