@@ -4,12 +4,20 @@ emoji: 📰
 rung: R3
 category: tools
 view: board
-updated: 2026-06-20
+updated: 2026-06-23
 ---
 # Daily AI News Scan
 
 A running log of the top AI stories, one section per day. Newest at the top.
 Updated automatically every morning by a scheduled Cowork task.
+
+## 2026-06-23
+
+- **Anthropic moves Claude Fable 5 behind a paywall.** As of today, Fable 5 is no longer bundled in Pro, Max, Team, or Enterprise seats and now bills as usage credits at $10 per million input and $50 per million output tokens, roughly double Opus 4.8.
+- **Gemini 3.5 Pro enters its GA window.** Google's next flagship is still in limited Vertex AI enterprise preview, but analyst tracking now puts public general availability between June 23 and June 30.
+- **OpenAI prepares a confidential IPO filing.** Working with Goldman Sachs and Morgan Stanley, OpenAI could file as soon as the coming weeks for a potential September listing, on a $730B private valuation.
+- **Morgan Stanley sees AI debt nearly doubling to $570B in 2026.** The bank projects global AI-linked borrowing to surge this year as hyperscalers and frontier labs finance massive new compute buildouts.
+- **OpenAI launches Daybreak, an automated cybersecurity program.** Pairing GPT-5.5 models with Codex security, it automates threat modeling, vulnerability detection, and patching, positioned as a rival to Anthropic's Project Glasswing.
 
 ## 2026-06-20
 
