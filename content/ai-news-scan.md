@@ -4,12 +4,20 @@ emoji: 📰
 rung: R3
 category: tools
 view: board
-updated: 2026-06-23
+updated: 2026-06-24
 ---
 # Daily AI News Scan
 
 A running log of the top AI stories, one section per day. Newest at the top.
 Updated automatically every morning by a scheduled Cowork task.
+
+## 2026-06-24
+
+- **Anthropic expands its compute pact with Google and Broadcom.** The deal locks in multiple gigawatts of next-generation Google TPU capacity, one of the largest compute commitments yet as labs race to secure training power.
+- **Anthropic files confidentially for an IPO at a reported $965B valuation.** The figure would put it ahead of OpenAI's private valuation, signaling investor appetite for frontier-model leaders is still climbing.
+- **Reflection AI commits $150M a month for Nvidia's GB300 chips.** Starting July 1 through 2029, the startup buys priority access to Nvidia's newest hardware inside SpaceX's Colossus 2 data center, showing how scarce top-tier compute has become.
+- **Google rolls out 24/7 Search agents in AI Mode.** Running on Gemini 3.5 Flash, the agents monitor the web on topics you choose and ping you when something new appears, part of the biggest Search redesign in 25 years.
+- **EU AI Act nears a major enforcement milestone.** Key obligations for general-purpose and high-risk AI systems are coming due, pushing companies operating in Europe to finalize compliance now.
 
 ## 2026-06-23
 
