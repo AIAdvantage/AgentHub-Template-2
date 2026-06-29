@@ -4,12 +4,20 @@ emoji: 📰
 rung: R3
 category: tools
 view: board
-updated: 2026-06-24
+updated: 2026-06-29
 ---
 # Daily AI News Scan
 
 A running log of the top AI stories, one section per day. Newest at the top.
 Updated automatically every morning by a scheduled Cowork task.
+
+## 2026-06-29
+
+- **OpenAI previews GPT-5.6 in three tiers: Sol, Terra, and Luna.** Sol targets the hardest problems, Terra is the balanced everyday model, and Luna is the fast, low-cost option, giving teams a clearer way to match model to task.
+- **US partially lifts the export ban on Anthropic's Claude Mythos 5.** Commerce restored access for critical-infrastructure defenders, a thaw in commercial relations even as the separate DOD lawsuit stays active.
+- **Colorado's AI Act becomes the first US state AI law to take effect.** Starting June 30 it regulates high-risk AI used in consequential decisions across hiring, housing, healthcare, and more, setting an early compliance bar for companies.
+- **Tech giants launch Agentic Resource Discovery (ARD), an open spec for AI agents.** Backed by Google, Microsoft, GitHub, Hugging Face, NVIDIA, Salesforce, and Snowflake, it lets agents find, verify, and connect to tools and other agents at runtime.
+- **Andrej Karpathy joins Anthropic to work on frontier models.** The high-profile hire signals Anthropic's continued pull on top research talent as the lab pursues its IPO.
 
 ## 2026-06-24
 
