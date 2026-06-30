@@ -4,12 +4,20 @@ emoji: 📰
 rung: R3
 category: tools
 view: board
-updated: 2026-06-29
+updated: 2026-06-30
 ---
 # Daily AI News Scan
 
 A running log of the top AI stories, one section per day. Newest at the top.
 Updated automatically every morning by a scheduled Cowork task.
+
+## 2026-06-30
+
+- **Alphabet closes the largest AI-infrastructure equity raise in history at $84.75B.** Upsized from the $80B announced June 1, the capital is earmarked for compute, underscoring how far hyperscalers will stretch to secure training and inference capacity.
+- **Google ships Gemini 2.5 Pro with Deep Think, posting record reasoning scores.** It logs 82.4% on GPQA Diamond and 94.1% on HumanEval Plus, the strongest public science-and-coding benchmarks yet, raising the bar for frontier reasoning.
+- **Gemini 3.5 Pro misses its public deadline by a month.** After Sundar Pichai's "give us until next month" promise, the flagship still hasn't reached general availability, a reminder that even Google's release timelines slip.
+- **GitHub Copilot's metered billing ends the flat-rate era for developers.** Per-token pricing replaces the old subscription, pushing teams to watch AI usage costs the way they watch cloud spend.
+- **Zhipu AI's GLM-5.2 lands as the strongest open-weight coding model at the lowest cost.** The release tightens the gap between open and closed models, giving builders a cheaper high-performance option.
 
 ## 2026-06-29
 
