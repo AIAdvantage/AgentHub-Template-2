@@ -4,12 +4,20 @@ emoji: 📰
 rung: R3
 category: tools
 view: board
-updated: 2026-06-30
+updated: 2026-07-02
 ---
 # Daily AI News Scan
 
 A running log of the top AI stories, one section per day. Newest at the top.
 Updated automatically every morning by a scheduled Cowork task.
+
+## 2026-07-02
+
+- **Anthropic ships Claude Sonnet 5 as the new default.** It became the default model for all Free and Pro users on July 1, performs near flagship Opus 4.8 on many tasks, and is priced below Sonnet 4.6 through August 31.
+- **Google launches Gemini 3.1 Flash Image and Gemini 3 Pro Image.** The two new image-generation models are live now in Google AI Studio and the Gemini API, giving builders a cheaper fast tier and a higher-quality pro tier.
+- **US lifts export controls on Claude Fable 5 and Mythos 5.** The Commerce Department cleared the restrictions and global access to Fable 5 began restoring July 1, easing a months-long trade snag for Anthropic.
+- **California readies statewide rollout of its "Poppy" AI assistant.** After a pilot with 2,800+ employees across 67 departments, the state government tool is on track for full deployment this month.
+- **Meta cuts ~8,000 jobs in an AI-focused restructuring.** About 10% of staff are being laid off while 7,000 more are reassigned to AI teams, a sharp signal of how the AI race is reshaping big-tech headcount.
 
 ## 2026-06-30
 
