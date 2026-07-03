@@ -4,12 +4,21 @@ emoji: 📰
 rung: R3
 category: tools
 view: board
-updated: 2026-07-02
+updated: 2026-07-03
 ---
 # Daily AI News Scan
 
 A running log of the top AI stories, one section per day. Newest at the top.
 Updated automatically every morning by a scheduled Cowork task.
+
+## 2026-07-03
+
+- **Anthropic fixes AI's biology accuracy problem.** A new deterministic retrieval tool built with NCBI lifted AI accuracy on viral sequence lookups from 16.9% to 92.8%, showing the issue was broken data infrastructure, not model skill.
+- **UBTECH unveils a mass-produced humanoid robot.** The UWORLD U1, billed as the first full-size humanoid built at scale, debuted at UBTECH's Shenzhen launch event.
+- **xAI opens a no-code builder for Grok voice agents.** The new Voice Agent Builder lets businesses spin up phone agents for $0.05 a minute without writing code.
+- **Together AI raises $800M to scale open-model infrastructure.** The round values the company at $8.3B as demand grows for hosting and serving open-weight models.
+- **White House fast-tracks voluntary AI safety standards.** Anthropic, CAISI, and the NSA are working with the administration on shared benchmarks for frontier model safety.
+
 
 ## 2026-07-02
 
