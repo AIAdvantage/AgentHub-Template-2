@@ -4,12 +4,20 @@ emoji: 📰
 rung: R3
 category: tools
 view: board
-updated: 2026-07-03
+updated: 2026-07-05
 ---
 # Daily AI News Scan
 
 A running log of the top AI stories, one section per day. Newest at the top.
 Updated automatically every morning by a scheduled Cowork task.
+
+## 2026-07-05
+
+- **Anthropic launches Claude Science.** A new research workbench with 60+ preconfigured tools ships in beta for Pro, Max, Team, and Enterprise users, alongside an internal drug discovery program targeting neglected diseases.
+- **Claude goes live on Microsoft Azure AI Foundry.** It's the first deployment of Claude on NVIDIA's GB300 Blackwell Ultra GPUs with Quantum-X800 InfiniBand networking, widening enterprise access.
+- **California taps Claude for its biggest state AI rollout yet.** Governor Newsom opened access to every state agency, city, and county at a 50% discount, the largest state government AI deployment in the US to date.
+- **OpenAI's next model lineup takes shape.** Preview details for GPT-5.6 Sol, Terra, and Luna confirm Sol sets a new Terminal-Bench 2.1 record, Terra matches GPT-5.5 at half the cost, and Luna is the fastest, cheapest tier.
+- **Grok 5 slips past Q3.** Still training on the 1.5 GW Colossus 2 cluster, prediction markets now put release odds at just 3%, a sign xAI's timeline keeps stretching.
 
 ## 2026-07-03
 
