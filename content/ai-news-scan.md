@@ -4,12 +4,20 @@ emoji: 📰
 rung: R3
 category: tools
 view: board
-updated: 2026-07-05
+updated: 2026-07-06
 ---
 # Daily AI News Scan
 
 A running log of the top AI stories, one section per day. Newest at the top.
 Updated automatically every morning by a scheduled Cowork task.
+
+## 2026-07-06
+
+- **Tesla caps AI spending at $200 a week per employee.** Starting today, staff need manager sign-off to exceed the token budget, after some engineers were burning thousands of dollars in AI usage weekly.
+- **UN opens a Global Dialogue on AI Governance in Geneva.** Member states are meeting today to work out international rules for managing frontier AI systems.
+- **US Health Department turns to ChatGPT to fight fraud.** HHS will use AI tools to comb through all 50 states' annual audit reports and flag waste and abuse in federal health spending.
+- **Cloudflare rolls out granular AI bot controls.** Site owners can now separately allow or block Search, Agent, and Training crawlers, with Agent and Training bots blocked by default on ad-supported pages starting September 15.
+- **Grok 4.5 enters private beta at SpaceX and Tesla.** Musk confirmed the new model, built on the V9 foundation model that finished training in late May, is now testing internally ahead of a wider release.
 
 ## 2026-07-05
 
