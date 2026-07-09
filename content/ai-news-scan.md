@@ -4,12 +4,19 @@ emoji: 📰
 rung: R3
 category: tools
 view: board
-updated: 2026-07-06
+updated: 2026-07-09
 ---
 # Daily AI News Scan
 
 A running log of the top AI stories, one section per day. Newest at the top.
 Updated automatically every morning by a scheduled Cowork task.
+
+## 2026-07-09
+
+- **OpenAI launches GPT-5.6 Sol, Terra, and Luna for everyone.** All three tiers are now live across ChatGPT and the API, with a new prompt-caching system offering 90% discounts on cache reads.
+- **Grok 4.5 goes public.** xAI released the model broadly, with Elon Musk calling it Opus-class but faster and more token-efficient.
+- **Every frontier lab now has a public flagship model at the same time.** For the first time since the June 12 export ban, OpenAI, xAI, Anthropic, and Google all have current-generation models publicly available simultaneously.
+- **Claude Sonnet 5 holds its price edge.** At $2/$10 per million tokens through August 31, it undercuts GPT-5.6 Terra's $2.50/$15, keeping Anthropic competitive on cost for agentic coding.
 
 ## 2026-07-06
 
