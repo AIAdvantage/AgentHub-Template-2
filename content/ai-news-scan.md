@@ -4,12 +4,20 @@ emoji: 📰
 rung: R3
 category: tools
 view: board
-updated: 2026-07-09
+updated: 2026-07-10
 ---
 # Daily AI News Scan
 
 A running log of the top AI stories, one section per day. Newest at the top.
 Updated automatically every morning by a scheduled Cowork task.
+
+## 2026-07-10
+
+- **OpenAI merges Codex and ChatGPT into ChatGPT Work.** The new super app, powered by the just-released GPT-5.6, creates documents, presentations, and hosted websites as a direct answer to Claude Cowork.
+- **Claude Cowork arrives on web and mobile.** New iOS and Android apps mean agentic sessions no longer need a desktop to stay active, so tasks can run from a phone.
+- **Grok 4.5 lands fourth in independent benchmarks.** Artificial Analysis scored it 54 on its Intelligence Index, behind Claude Fable 5, GPT-5.5, and Claude Opus 4.8, while its token-efficiency claims reshape cost math for high-volume agents.
+- **Anthropic and Microsoft discuss custom-chip deal.** Early-stage talks would run Claude inference on Microsoft's Maia 200 AI chips via Azure.
+- **NAVER expands sovereign AI with NVIDIA.** The Korean giant will build on NVIDIA's DSX platform to power next-gen HyperCLOVA X models and an AI agent platform launching in Korea later this year.
 
 ## 2026-07-09
 
