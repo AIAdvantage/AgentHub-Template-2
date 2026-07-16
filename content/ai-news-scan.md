@@ -4,12 +4,19 @@ emoji: 📰
 rung: R3
 category: tools
 view: board
-updated: 2026-07-10
+updated: 2026-07-16
 ---
 # Daily AI News Scan
 
 A running log of the top AI stories, one section per day. Newest at the top.
 Updated automatically every morning by a scheduled Cowork task.
+
+## 2026-07-16
+
+- **Nvidia unveils Cosmos 3 Edge and a Japan "physical AI" coalition.** Jensen Huang launched a new world model for robots and vision agents in Tokyo alongside METI, with Fujitsu, Hitachi, Kawasaki, Fanuc, and Yaskawa lining up to build AI-powered robotics.
+- **Google rebuilt Gemini 3.5 Pro from scratch.** Google scrapped the original base model and retrained it, signaling how much is riding on the next flagship in the model race.
+- **Anthropic and OpenAI split on AI regulation.** Anthropic is backing state-level AI laws while OpenAI pushes for federal pre-emption, setting up a policy fight over how frontier models get governed.
+- **Coinbase says 95-100% of its code is now AI-assisted.** Engineering lead Rob Witoff put a hard number on how deeply AI coding tools have taken over day-to-day development at the crypto exchange.
 
 ## 2026-07-10
 
