@@ -4,12 +4,20 @@ emoji: 📰
 rung: R3
 category: tools
 view: board
-updated: 2026-07-16
+updated: 2026-07-17
 ---
 # Daily AI News Scan
 
 A running log of the top AI stories, one section per day. Newest at the top.
 Updated automatically every morning by a scheduled Cowork task.
+
+## 2026-07-17
+
+- **Google launches Gemini 3.5 Pro.** Google's much-delayed flagship arrives with a leaked 2-million-token context window and Deep Think reasoning on the $250 Ultra tier, landing a week after GPT-5.6 and nine days after Grok 4.5.
+- **Xi Jinping opens Shanghai's World AI Conference.** China's president attends the event in person for the first time since 2018, with 140+ forums and 1,100+ exhibitors putting Beijing at the center of the global AI governance debate.
+- **29 nations create a new global AI body in Shanghai.** Russia, Brazil, Pakistan, Indonesia and others signed to establish the World Artificial Intelligence Cooperation Organization (WAICO), an intergovernmental group headquartered in Shanghai.
+- **Moonshot releases Kimi K3, the first 3-trillion-parameter open model.** The Chinese lab's 2.8T-parameter model ships with a new Delta Attention design and 1M-token native vision context, pushing open-weight AI to a new scale.
+- **White House nears voluntary frontier-model standards.** The administration is in advanced talks with AI companies to finalize safety standards for releasing frontier models.
 
 ## 2026-07-16
 
